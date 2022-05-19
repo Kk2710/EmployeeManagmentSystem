@@ -26,7 +26,21 @@ fun Int.getTrainingStatusById(): String{
         else -> "Unknown status id found"
     }
 
+}
 
+fun Int.getCasApplicationStatusById(): String{
+
+    return when(this){
+        CAS_FORWARDED_TO_PRINCIPAL -> "To the Principle's Desk"
+        CAS_FORWARDED_TO_JOINT_DIRECTOR -> "Forwarded to Joint-Director's Desk"
+        CAS_FORWARDED_TO_DIRECTOR -> "Forwarded to Director's desk"
+        CAS_REVERTED_BY_PRINCIPAL -> "Application Reverted - Principle's Desk"
+        CAS_REVERTED_BY_JOINT_DIRECTOR -> "Application Reverted - Joint-Director's desk"
+        CAS_REVERTED_BY_DIRECTOR -> "Application Reverted - Director's Desk"
+        CAS_APPROVED -> "Application approved"
+
+        else -> "Unknown status id found"
+    }
 }
 
 fun Int.getIoApplicationStatusById(): String{

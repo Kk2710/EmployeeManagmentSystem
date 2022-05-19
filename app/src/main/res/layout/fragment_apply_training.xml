@@ -98,7 +98,8 @@
                     style="@style/EditTextAuth"
                     android:hint="Organized By"
                     android:inputType="textPersonName"
-                    android:textSize="16dp" />
+                    android:textSize="16dp"
+                    />
 
 
             </LinearLayout>

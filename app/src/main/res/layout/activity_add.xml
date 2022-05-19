@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/idTrainName"
+        style="@style/EditTextAuth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Enter Training Name"
+        android:inputType="textLongMessage" />
+
+    <EditText
+        android:id="@+id/idSponsered"
+        style="@style/EditTextAuth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTrainName"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Sponsered By"
+        android:inputType="textLongMessage"/>
+
+    <EditText
+        android:id="@+id/idType"
+        style="@style/EditTextAuth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idSponsered"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Enter training Type"
+        android:inputType="textLongMessage"/>
+
+    <EditText
+        android:id="@+id/idEdtTime"
+        style="@style/EditTextAuth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idType"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Enter Training Duration"
+        android:inputType="textLongMessage"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal">
+
+        <EditText
+            android:id="@+id/idEdtTrainingaStartdate"
+            style="@style/EditTextAuth"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/idEdtTime"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:hint="Enter Training Start Date"
+            android:inputType="date" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal">
+
+        <EditText
+            android:id="@+id/idEdtTrainingEnddate"
+            style="@style/EditTextAuth"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/idEdtTrainingaStartdate"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:hint="Enter Training End Date"
+            android:inputType="date" />
+
+    </LinearLayout>
+
+</LinearLayout>

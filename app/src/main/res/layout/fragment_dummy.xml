@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.employee_dashboard.ui.apply_cas.DummyFragment">
+
+<!--- Manjiri's UI  -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <!--text view for heading-->
+            <TextView
+                android:id="@+id/idTVHeader"
+                style="@style/MaterialAlertDialog.MaterialComponents.Title.Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppinsbold"
+                android:gravity="center_horizontal"
+                android:padding="3dp"
+                android:text="CAS Application Form"
+                android:textAlignment="center"
+                android:textColor="@color/purple_500"
+                android:textSize="32sp" />
+
+            <!--edit text for user name-->
+
+            <EditText
+                android:id="@+id/idEdtSurName"
+                style="@style/EditTextAuth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idTVHeader"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"
+                android:hint="Enter Your surname"
+                android:inputType="textLongMessage" />
+
+            <EditText
+                android:id="@+id/idEdtFirstname"
+                style="@style/EditTextAuth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"
+                android:hint="Enter Your Firstname"
+                android:inputType="textLongMessage" />
+
+            <EditText
+                android:id="@+id/idEdtMiddlename"
+                style="@style/EditTextAuth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idEdtSurName"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"
+                android:hint="Enter Your Middlename"
+                android:inputType="textLongMessage" />
+
+
+            <!--edit text for email -->
+            <EditText
+                android:id="@+id/idEdtEmail"
+                style="@style/EditTextAuth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"
+                android:hint="Enter Your Email"
+                android:inputType="textEmailAddress" />
+
+            <!--edit text for phone number-->
+            <EditText
+                android:id="@+id/idEdtPhnNumber"
+                style="@style/EditTextAuth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idEdtEmail"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:hint="Enter Phone Number"
+                android:inputType="phone" />
+
+
+            <!--edit text for user DOB-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:id="@+id/idEdtDate"
+                    style="@style/EditTextAuth"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/idEdtPhnNumber"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="10dp"
+                    android:hint="Enter Date Of Birth"
+                    android:inputType="date" />
+
+            </LinearLayout>
+
+            <!--edit text for user age-->
+            <EditText
+                android:id="@+id/idEdtAge"
+                style="@style/EditTextAuth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idEdtDate"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:hint="Enter Age"
+                android:inputType="textPhonetic"
+                tools:ignore="DuplicateIds" />
+
+            <!--edit text for user Gender-->
+            <EditText
+                android:id="@+id/idEdtGender"
+                style="@style/EditTextAuth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idEdtAge"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:hint="Enter Gender"
+                android:inputType="textShortMessage" />
+
+            <!--edit text for user DOJ-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:id="@+id/idEdtDOJ"
+                    style="@style/EditTextAuth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/idEdtGender"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="10dp"
+                    android:hint="Enter Date Of Joining"
+                    android:inputType="textPhonetic" />
+
+            </LinearLayout>
+
+
+            <!--edit text for user EmpCode-->
+            <EditText
+                android:id="@+id/idEdtSevid"
+                style="@style/EditTextAuth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idEdtDOJ"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:hint="Enter Sevarth Id"
+                android:inputType="textPhonetic" />
+
+
+            <!--edit text for user Branch-->
+            <EditText
+                android:id="@+id/idEdtBranch"
+                style="@style/EditTextAuth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idEdtSevid"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:hint="Enter Branch"
+                android:inputType="textShortMessage" />
+
+            <!--edit text for user Address-->
+            <EditText
+                android:id="@+id/idEdtAddress"
+                style="@style/EditTextAuth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idEdtBranch"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:hint="Enter Your Address"
+                android:inputType="textShortMessage" />
+
+            <!--edit text for user state-->
+            <EditText
+                android:id="@+id/idEdtState"
+                style="@style/EditTextAuth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idEdtAddress"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:hint="Enter Name of State"
+                android:inputType="textShortMessage" />
+
+            <!--edit text for user city-->
+            <EditText
+                android:id="@+id/idEdtCity"
+                style="@style/EditTextAuth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idEdtState"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:hint="Enter Name of City"
+                android:inputType="textShortMessage" />
+
+            <!--edit text for user Taluka-->
+            <EditText
+                android:id="@+id/idEdtTaluka"
+                style="@style/EditTextAuth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idEdtCity"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:hint="Enter Name of Taluka"
+                android:inputType="textShortMessage" />
+
+            <!--edit text for user village-->
+            <EditText
+                android:id="@+id/idEdtVillage"
+                style="@style/EditTextAuth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idEdtTaluka"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:hint="Enter Name of village"
+                android:inputType="textShortMessage" />
+
+            <!--edit text for user pin code-->
+            <EditText
+                android:id="@+id/idEdtPincode"
+                style="@style/EditTextAuth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idEdtVillage"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:hint="Enter Pincode"
+                android:inputType="textShortMessage" />
+
+            <!--button to register our new user-->
+            <Button
+                android:id="@+id/idBtnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idEdtPincode"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="25dp"
+                android:text="Next"
+                android:textAllCaps="false" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+    <ProgressBar
+        android:id="@+id/progress_bar_cas_personal"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>

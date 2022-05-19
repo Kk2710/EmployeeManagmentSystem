@@ -62,5 +62,21 @@
             app:destination="@id/ioApplicationDetails" />
     </fragment>
 
+    <fragment
+        android:id="@+id/nav_cas_view_form"
+        android:name="com.android.employeemanagmentsystem.ui.admin_dashboard.ui.leave_applications.LeaveApplicationsFragment"
+        android:label="@string/cas_admin_title"
+        tools:layout="@layout/fragment_cas_view_form"/>
+
+    <fragment
+        android:id="@+id/nav_cas_applications"
+        android:name="com.android.employeemanagmentsystem.ui.admin_dashboard.ui.cas_applications.CasViewForm"
+        android:label="@string/nav_cas_application"
+        tools:layout="@layout/fragment_cas_applications">
+        <action
+            android:id="@+id/action_nav_cas_applications_to_nav_cas_view_form"
+            app:destination="@id/nav_cas_view_form" />
+    </fragment>
+
 
 </navigation>

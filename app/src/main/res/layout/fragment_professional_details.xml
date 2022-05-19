@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.employee_dashboard.ui.apply_cas.CasProfessionalDetail">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="25dp"
+            android:fontFamily="@font/poppinsbold"
+            android:text="@string/cas_pro_heading"
+            android:textColor="@color/purple_500"
+            android:textSize="30sp" />
+
+
+        <TextView
+            android:id="@+id/idHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="3dp"
+            android:text="Professional details"
+            android:textAlignment="center"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="25sp" />
+
+
+        <EditText
+            android:id="@+id/idEdtdate_of_probession"
+            style="@style/EditTextAuth"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/idHeader"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:hint="Enter Date Of Probession"
+            android:inputType="date" />
+
+
+        <EditText
+            android:id="@+id/idEdtGRNO"
+            style="@style/EditTextAuth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idEdtDOP"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:hint="Enter GR NO."
+            android:inputType="textPhonetic" />
+
+        <TextView
+            android:id="@+id/idPreviousSD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:padding="3dp"
+            android:text="Previous Service Details"
+            android:textAlignment="center"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/idEdtIName"
+                style="@style/EditTextAuth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idPreviousSD"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:hint="Enter Institute Name"
+                android:inputType="textLongMessage" />
+
+
+            <EditText
+                android:id="@+id/idEdtServiceStartDate"
+                style="@style/EditTextAuth"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/idPreviousSD"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:hint="Enter Service Start Date"
+                android:inputType="date" />
+
+
+            <EditText
+                android:id="@+id/idEdtServiceEndDate"
+                style="@style/EditTextAuth"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/idEdtSD"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:hint="Enter Service End Date"
+                android:inputType="date" />
+            <androidx.fragment.app.FragmentContainerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/fragment_container_view">
+            </androidx.fragment.app.FragmentContainerView>
+
+            <Button
+                android:id="@+id/idEdtAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_below="@+id/idEdtED"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:onClick="onAddField"
+                android:text="ADD" />
+        </LinearLayout>
+
+            <TextView
+                android:id="@+id/idTraining"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:padding="3dp"
+                android:text="Training details"
+                android:textAlignment="center"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/idTrainingName"
+                style="@style/EditTextAuth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idTraining"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:hint="Enter Training Name"
+                android:inputType="textLongMessage" />
+
+            <EditText
+                android:id="@+id/idSponseredby"
+                android:layout_width="match_parent"
+                style="@style/EditTextAuth"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idTrainingName"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:hint="Sponsered By"
+                android:inputType="textLongMessage" />
+
+            <EditText
+                android:id="@+id/idTrainingType"
+                style="@style/EditTextAuth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idSponseredby"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:hint="Enter training Type"
+                android:inputType="textLongMessage" />
+
+            <EditText
+                android:id="@+id/idEdtDuration"
+                style="@style/EditTextAuth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idTrainingType"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:hint="Enter Training Duration"
+                android:inputType="textLongMessage" />
+
+
+            <EditText
+                android:id="@+id/idEdtTrainingStart"
+                style="@style/EditTextAuth"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/idEdtDuration"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:hint="Enter Training Start Date"
+                android:inputType="date" />
+
+
+            <EditText
+                android:id="@+id/idEdtTrainingEnd"
+                style="@style/EditTextAuth"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/idEdtTrainingaStart"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:hint="Enter Training End Date"
+                android:inputType="date" />
+
+            <LinearLayout
+                android:id="@id/parent_linear_layout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="fill_horizontal"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/idEdtAddBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_below="@+id/idEdtEndDate"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:onClick="onadddata"
+                android:text="ADD" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="20dp"
+                >
+
+                <Button
+                    android:id="@+id/idBtnPrevious"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/idEdtTrainingEnd"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="20dp"
+                    android:text="Previous"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/idBtnNext"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/idEdtTrainingEnd"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_toRightOf="@+id/idBtnPrevious"
+                    android:text="Next"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    <ProgressBar
+        android:id="@+id/progress_bar_cas_professional"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+
+</RelativeLayout>

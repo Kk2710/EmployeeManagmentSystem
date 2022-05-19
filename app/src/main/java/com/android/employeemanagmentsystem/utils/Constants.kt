@@ -1,8 +1,8 @@
 package com.android.employeemanagmentsystem.utils
 
 
-const val BASE_URL = "http://192.168.9.44" +
-        "/projects/ems/";
+const val BASE_URL = "http://192.168.248.47" + "/ems/";
+
 
 const val TRAINING_ALL_STATUS = 0
 const val TRAINING_APPLIED_TO_HOD = 1
@@ -28,5 +28,18 @@ const val ROLE_EMPLOYEE = 1
 const val ROLE_HOD = 2
 const val ROLE_Principle = 3
 const val ROLE_Registrar = 4
+const val ROLE_Joint_Director = 5
+const val ROLE_Director = 6
+
+
+//cas application status constants
+const val CAS_ALL_STATUS = 0
+const val CAS_FORWARDED_TO_PRINCIPAL = 1
+const val CAS_FORWARDED_TO_JOINT_DIRECTOR = 2
+const val CAS_FORWARDED_TO_DIRECTOR = 3
+const val CAS_APPROVED = 4
+const val CAS_REVERTED_BY_PRINCIPAL = 5
+const val CAS_REVERTED_BY_JOINT_DIRECTOR = 6
+const val CAS_REVERTED_BY_DIRECTOR = 7
 
 //error in approve button click in io application using hod

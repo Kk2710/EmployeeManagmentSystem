@@ -17,6 +17,12 @@
         android:theme="@style/Theme.EmployeeManagmentSystem"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".ui.employee_dashboard.ui.apply_cas.field"
+            android:exported="false" />
+        <activity
+            android:name=".ui.employee_dashboard.ui.apply_cas.add"
+            android:exported="false" />
+        <activity
             android:name=".ui.registrar_dashboard.RegistrarDashboard"
             android:exported="true" />
         <activity

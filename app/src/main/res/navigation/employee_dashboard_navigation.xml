@@ -78,4 +78,38 @@
             android:id="@+id/action_nav_applied_applications_to_ioApplicationDetails"
             app:destination="@id/ioApplicationDetails" />
     </fragment>
+
+
+    <!-- CAS -->
+
+    <!-- Personal Details -->
+    <fragment
+        android:id="@+id/nav_personal_details"
+        android:name="com.android.employeemanagmentsystem.ui.employee_dashboard.ui.apply_cas.DummyFragment"
+        android:label="@string/cas_dummy"
+        tools:layout="@layout/fragment_dummy">
+        <action
+            android:id="@+id/action_nav_applied_trainings_to_trainingCompletionFragment"
+            app:destination="@id/nav_professional_details" />
+    </fragment>
+
+
+    <!--  professional Details-->
+    <fragment
+        android:id="@+id/nav_professional_details"
+        android:name="com.android.employeemanagmentsystem.ui.employee_dashboard.ui.apply_cas.CasProfessionalDetail"
+        android:label="@string/cas_professional_details"
+        tools:layout="@layout/fragment_professional_details">
+    <action
+        android:id="@+id/action_nav_applied_trainings_to_trainingCompletionFragment"
+        app:destination="@id/nav_confidential_report" />
+</fragment>
+
+    <!-- Confidential Report -->
+    <fragment
+        android:id="@+id/nav_confidential_report"
+        android:name="com.android.employeemanagmentsystem.ui.employee_dashboard.ui.apply_cas."
+        android:label="@string/cas_confidential_details"
+        tools:layout="@layout/fragment_confidential_report" />
+
 </navigation>

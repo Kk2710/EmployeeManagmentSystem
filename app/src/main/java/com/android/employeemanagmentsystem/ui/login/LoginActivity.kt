@@ -62,6 +62,12 @@ class LoginActivity : AppCompatActivity() {
                             //saving the employee in local database
                             authRepository.saveEmp(employee, employeeDao)
 
+
+                            withContext(Dispatchers.Main){
+
+                            }
+
+
                             val employeeRoleId = employee.role_id.toInt()
 
                             //role id 1 is for employee

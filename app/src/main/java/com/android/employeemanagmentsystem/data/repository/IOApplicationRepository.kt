@@ -1,9 +1,9 @@
 package com.android.employeemanagmentsystem.data.repository
 
-import com.android.employeemanagmentsystem.data.models.responses.Training
+import com.android.employeemanagmentsystem.data.models.responses.Application
+import com.android.employeemanagmentsystem.data.models.responses.StatusResponse
 import com.android.employeemanagmentsystem.data.network.SafeApiRequest
 import com.android.employeemanagmentsystem.data.network.apis.IOApplicationApi
-import com.android.employeemanagmentsystem.data.network.apis.TrainingApi
 import com.android.employeemanagmentsystem.utils.toMultipartReq
 import okhttp3.MultipartBody
 
@@ -20,7 +20,7 @@ class IOApplicationRepository : SafeApiRequest() {
         application_type: String,
         applyPdf: MultipartBody.Part,
         iOApplicationApi: IOApplicationApi
-    ) = apiRequest {
+    ): StatusResponse = apiRequest {
         iOApplicationApi.applyIOApplication(
             sevarth_id.toMultipartReq(),
             title.toMultipartReq(),
@@ -45,7 +45,7 @@ class IOApplicationRepository : SafeApiRequest() {
         status_id: String,
         remark: String,
         iOApplicationApi: IOApplicationApi
-    ) = apiRequest {
+    ): StatusResponse = apiRequest {
         iOApplicationApi.updateStatusId(application_id, status_id, remark)
     }
 
@@ -54,7 +54,7 @@ class IOApplicationRepository : SafeApiRequest() {
         sevarth_id: String,
         role_id: String,
         iOApplicationApi: IOApplicationApi
-    ) = apiRequest {
+    ):List<Application> = apiRequest {
         iOApplicationApi.getAppliedApplications(sevarth_id, role_id)
     }
 

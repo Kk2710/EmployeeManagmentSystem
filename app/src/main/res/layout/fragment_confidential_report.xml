@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_confidential_report"
+    tools:context=".ui.employee_dashboard.ui.apply_cas.CasConfidentialReport">
+
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+                <!--text view for heading-->
+                <TextView
+                    android:id="@+id/idConfidential"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:text="Confidential Report"
+                    android:textAlignment="center"
+                    android:textColor="@color/purple_500"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <!--edit text for user name-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp"
+                >
+                <TextView
+                    android:id="@+id/idEdtInstitude"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:minHeight="35dp"
+                    android:text="Institute Name:*"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/idEdtInstitude1"
+                    style="@style/EditTextAuth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/idEdtInstitude"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:hint="Institute Name"
+                    android:inputType="textPhonetic"
+                    android:minHeight="48dp" />
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="20dp"
+                    >
+                <TextView
+                    android:id="@+id/idEdtCRStart"
+                    android:layout_width="389dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:minHeight="30dp"
+                    android:text="CR Start Date:*"
+                    android:textSize="20sp"/>
+
+
+                <EditText
+                    android:id="@+id/idEdtDate1"
+                    style="@style/EditTextAuth"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/idEdtCRStart"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:hint="Enter the Start Date"
+                    android:inputType="date"
+                    tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="20dp">
+                <TextView
+                    android:id="@+id/idEdtCREnd"
+                    android:layout_width="389dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:minHeight="30dp"
+                    android:text="CR End Date:*"
+                    android:textSize="20sp"/>
+
+
+                <EditText
+                    android:id="@+id/idEdtDate2"
+                    style="@style/EditTextAuth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/idEdtCREnd"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:hint="Enter the End Date"
+                    android:inputType="textPhonetic"
+                    android:minHeight="48dp" />
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp">
+                <TextView
+                    android:id="@+id/idEdtGrade"
+                    android:layout_width="395dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:minHeight="30dp"
+                    android:text="Grade:*"
+                    android:textSize="20sp"/>
+
+
+                <EditText
+                    android:id="@+id/idGrade"
+                    style="@style/EditTextAuth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/idEdtGrade"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:hint="Enter the grade"
+                    android:inputType="textPhonetic"
+                    android:minHeight="48dp" />
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="20dp">
+                <TextView
+                    android:id="@+id/idImage_1"
+                    android:layout_width="385dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:minHeight="30dp"
+                    android:text="Upload Your Photo:*"
+                    android:textSize="20sp"/>
+
+                <Button
+                    android:id="@+id/idBtn_1"
+                    android:layout_width="367dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/idGrade"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Choose File"
+                    android:textAllCaps="false" />
+                </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginBottom="20dp">
+                <TextView
+                    android:id="@+id/idImage_2"
+                    android:layout_width="385dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:minHeight="30dp"
+                    android:text="Upload Signature Photo:*"
+                    android:textSize="20sp"/>
+
+                <Button
+                    android:id="@+id/idBtn_2"
+                    android:layout_width="370dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/idGrade"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Choose File"
+                    android:layout_marginBottom="20dp"
+                    android:textAllCaps="false" />
+</LinearLayout>
+
+                <!--button to register our new user-->
+
+                <Button
+                    android:id="@+id/idBtnSubmit"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/idGrade"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Submit"
+                    android:textAllCaps="false"
+                    android:layout_gravity="center"/>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+    <ProgressBar
+        android:id="@+id/progress_bar_cas_cr"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+
+
+
+</FrameLayout>

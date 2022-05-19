@@ -18,4 +18,16 @@
     <string name="menu_leave_applications">Leave Applications</string>
     <string name="title_activity_principal_dashboard">ActivityPrincipalDashboard</string>
     <string name="menu_logout">Logout</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--CAS - Career Advancement Scheme-->
+    <string name="cas_title">Apply CAS</string>
+    <string name="cas_dummy">Personal Details</string>
+    <string name="cas_professional_details">Professional Details</string>
+    <string name="cas_confidential_details">Confidential Details</string>
+    <string name="cas_pro_heading">CAS Professional Details</string>
+    <string name="cas_admin_title">CAS Applications</string>
+    <string name="gr_no">GR NO.</string>
+    <string name="nav_cas_application">CAS Applications</string>
 </resources>
