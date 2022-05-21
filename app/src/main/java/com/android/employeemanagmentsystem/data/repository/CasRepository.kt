@@ -4,6 +4,7 @@ import com.android.employeemanagmentsystem.data.models.responses.casData
 import com.android.employeemanagmentsystem.data.network.SafeApiRequest
 import com.android.employeemanagmentsystem.data.network.apis.CasApi
 import com.android.employeemanagmentsystem.utils.toMultipartReq
+import okhttp3.MultipartBody
 
 class CasRepository: SafeApiRequest() {
 
@@ -80,13 +81,15 @@ class CasRepository: SafeApiRequest() {
         crStartDate: String,
         crEndDate: String,
         grade: String,
+        selectPDF: MultipartBody.Part,
         casApi: CasApi
     ) = apiRequest{
         casApi.add_crDetails(
             institute_name.toMultipartReq(),
             crStartDate.toMultipartReq(),
             crEndDate.toMultipartReq(),
-            grade.toMultipartReq()
+            grade.toMultipartReq(),
+            selectPDF
         )
     }
 

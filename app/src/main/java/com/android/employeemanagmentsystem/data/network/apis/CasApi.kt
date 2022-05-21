@@ -64,7 +64,9 @@ interface CasApi {
         @Part("institute_name") insitute_name: RequestBody,
         @Part("crStartDate") crStartDate: RequestBody,
         @Part("crEndDate") crEndDate: RequestBody,
-        @Part("grade") grade: RequestBody
+        @Part("grade") grade: RequestBody,
+        @Part part: MultipartBody.Part
+
     ): Response<StatusResponse>
 
     @FormUrlEncoded

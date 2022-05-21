@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.employeemanagmentsystem">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -16,12 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EmployeeManagmentSystem"
         android:usesCleartextTraffic="true">
-        <activity
-            android:name=".ui.employee_dashboard.ui.apply_cas.field"
-            android:exported="false" />
-        <activity
-            android:name=".ui.employee_dashboard.ui.apply_cas.add"
-            android:exported="false" />
+
         <activity
             android:name=".ui.registrar_dashboard.RegistrarDashboard"
             android:exported="true" />

@@ -90,7 +90,7 @@ class DummyFragment: Fragment(R.layout.fragment_dummy) {
             authRepository = AuthRepository()
             employeeDao = AppDatabase.invoke(requireContext()).getEmployeeDao()
             casRepo = CasRepository()
-            casApi = CasApi.invoke()
+
 
             when {
 
@@ -119,6 +119,8 @@ class DummyFragment: Fragment(R.layout.fragment_dummy) {
                             withContext(Dispatchers.Main) {
                                 binding.progressBarCasPersonal.isVisible = true
                             }
+
+
 
                             //getting employee details from room database
                             val employee = authRepository.getEmployee(employeeDao)

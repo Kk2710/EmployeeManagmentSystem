@@ -28,7 +28,7 @@
                 android:padding="3dp"
                 android:text="CAS Application Form"
                 android:textAlignment="center"
-                android:textColor="@color/purple_500"
+                android:textColor="@color/dark_blue"
                 android:textSize="32sp" />
 
             <!--edit text for user name-->

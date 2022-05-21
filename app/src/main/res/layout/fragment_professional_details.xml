@@ -41,11 +41,10 @@
 
 
         <EditText
-            android:id="@+id/idEdtdate_of_probession"
+            android:id="@+id/idEdtdateOfProbession"
             style="@style/EditTextAuth"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@id/idHeader"
             android:layout_marginStart="10dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="10dp"
@@ -58,7 +57,6 @@
             style="@style/EditTextAuth"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/idEdtDOP"
             android:layout_marginStart="10dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="10dp"
@@ -86,7 +84,6 @@
                 style="@style/EditTextAuth"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/idPreviousSD"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="10dp"
@@ -99,7 +96,6 @@
                 style="@style/EditTextAuth"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_below="@id/idPreviousSD"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="10dp"
@@ -112,19 +108,28 @@
                 style="@style/EditTextAuth"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_below="@id/idEdtSD"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="10dp"
                 android:hint="Enter Service End Date"
                 android:inputType="date" />
-            <androidx.fragment.app.FragmentContainerView
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp">
+                <TextView
+                    style="@style/TextViewAuth"
+                    android:text="Proof"
+                    android:layout_marginStart="10dp"/>
+            <TextView
+                android:id="@+id/pdfproof"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/fragment_container_view">
-            </androidx.fragment.app.FragmentContainerView>
+                style="@style/EditTextAuth"
+                android:hint="Proof certificate"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                /></LinearLayout>
 
             <Button
                 android:id="@+id/idEdtAdd"
@@ -202,7 +207,6 @@
                 style="@style/EditTextAuth"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_below="@id/idEdtDuration"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="10dp"
@@ -215,7 +219,6 @@
                 style="@style/EditTextAuth"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_below="@id/idEdtTrainingaStart"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="10dp"
@@ -236,7 +239,6 @@
                 android:id="@+id/idEdtAddBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="60dp"
-                android:layout_below="@+id/idEdtEndDate"
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"
                 android:onClick="onadddata"
@@ -254,7 +256,6 @@
                     android:id="@+id/idBtnPrevious"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/idEdtTrainingEnd"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="20dp"
@@ -265,7 +266,6 @@
                     android:id="@+id/idBtnNext"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/idEdtTrainingEnd"
                     android:layout_marginStart="40dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="20dp"

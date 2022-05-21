@@ -24,10 +24,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
                     android:gravity="center_horizontal"
+                    style=""
                     android:padding="5dp"
                     android:text="Confidential Report"
                     android:textAlignment="center"
-                    android:textColor="@color/purple_500"
+                    android:textColor="@color/dark_blue"
                     android:textSize="25sp"
                     android:textStyle="bold" />
 
@@ -170,7 +171,7 @@
                     android:layout_marginTop="20dp"
                     android:layout_marginEnd="10dp"
                     android:minHeight="30dp"
-                    android:text="Upload Your Photo:*"
+                    android:text="Upload Your Photo and Signature:*"
                     android:textSize="20sp"/>
 
                 <Button
@@ -188,38 +189,7 @@
                     android:text="Choose File"
                     android:textAllCaps="false" />
                 </LinearLayout>
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:layout_marginBottom="20dp">
-                <TextView
-                    android:id="@+id/idImage_2"
-                    android:layout_width="385dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginEnd="10dp"
-                    android:minHeight="30dp"
-                    android:text="Upload Signature Photo:*"
-                    android:textSize="20sp"/>
 
-                <Button
-                    android:id="@+id/idBtn_2"
-                    android:layout_width="370dp"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/idGrade"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginLeft="40dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginRight="10dp"
-                    android:text="Choose File"
-                    android:layout_marginBottom="20dp"
-                    android:textAllCaps="false" />
-</LinearLayout>
 
                 <!--button to register our new user-->
 
