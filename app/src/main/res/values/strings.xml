@@ -30,4 +30,12 @@
     <string name="cas_admin_title">CAS Applications</string>
     <string name="gr_no">GR NO.</string>
     <string name="nav_cas_application">CAS Applications</string>
+    <string name="add_user_details">Add User Details</string>
+    <string name="menu_verify_user">Verify User</string>
+    <string name="user_details">Profile</string>
+    <string name="menu_user_details">User Details</string>
+    <string name="menu_all_employees">All Employees</string>
+    <string name="edit_user_details">Edit User Details</string>
+    <string name="menu_edit_user_details">Edit Details</string>
+    <string name="menu_apply_traning">Apply Training</string>
 </resources>

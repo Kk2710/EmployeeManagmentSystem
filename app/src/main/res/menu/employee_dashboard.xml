@@ -23,12 +23,20 @@
         <item android:id="@+id/nav_applied_applications"
             android:title="@string/menu_applied_applications"/>
 
+<<<<<<< HEAD
         <item android:id="@+id/nav_personal_details"
             android:title="@string/cas_title"/>
 
       <!--  <item android:id="@+id/nav_professional_details"
             android:title="@string/cas_professional_details"/>
 -->
+=======
+        <item android:id="@+id/nav_user_details"
+            android:title="@string/menu_user_details"/>
+
+        <item android:id="@+id/nav_edit_details"
+            android:title="@string/menu_edit_user_details"/>
+>>>>>>> afec2c8491c64d10e88a581f69bcda4ff75eadbb
 
         <item
             android:id="@+id/nav_logout"

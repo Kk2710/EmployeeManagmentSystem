@@ -22,7 +22,7 @@ import com.android.employeemanagmentsystem.data.repository.TrainingRepository
 import com.android.employeemanagmentsystem.data.room.AppDatabase
 import com.android.employeemanagmentsystem.data.room.EmployeeDao
 import com.android.employeemanagmentsystem.databinding.FragmentAddCompletedTrainingBinding
-import com.android.employeemanagmentsystem.ui.employee_dashboard.ui.apply_training.TrainingTypesAdapter
+import com.android.employeemanagmentsystem.ui.admin_dashboard.ui.apply_training.TrainingTypesAdapter
 import com.android.employeemanagmentsystem.utils.*
 import kotlinx.coroutines.*
 import okhttp3.MultipartBody

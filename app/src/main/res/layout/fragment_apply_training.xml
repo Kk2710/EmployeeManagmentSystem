@@ -43,7 +43,7 @@
 
                 <TextView
                     style="@style/TextViewAuth"
-                    android:text="Name" />
+                    android:text="Training Name" />
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/et_training_name"
@@ -105,30 +105,6 @@
             </LinearLayout>
 
             <!--Linear Duration-->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginHorizontal="10dp"
-                android:layout_marginTop="10dp"
-                android:orientation="horizontal"
-                android:padding="5dp">
-
-                <TextView
-                    style="@style/TextViewAuth"
-                    android:text="Duration" />
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/et_duration"
-                    style="@style/EditTextAuth"
-                    android:layout_marginLeft="20dp"
-                    android:hint="Enter Training Duration"
-                    android:inputType="number"
-                    android:textSize="16dp" />
-
-
-
-            </LinearLayout>
 
             <!--Linear Start Date-->
             <LinearLayout

@@ -2,6 +2,8 @@ package com.android.employeemanagmentsystem.data.repository
 
 import com.android.employeemanagmentsystem.data.models.responses.Application
 import com.android.employeemanagmentsystem.data.models.responses.StatusResponse
+import com.android.employeemanagmentsystem.data.models.responses.EmployeeDetails
+import com.android.employeemanagmentsystem.data.models.responses.Training
 import com.android.employeemanagmentsystem.data.network.SafeApiRequest
 import com.android.employeemanagmentsystem.data.network.apis.IOApplicationApi
 import com.android.employeemanagmentsystem.utils.toMultipartReq
@@ -18,6 +20,8 @@ class IOApplicationRepository : SafeApiRequest() {
         org_id: String,
         department_id: String,
         application_type: String,
+        from_department: String,
+        role_id: String,
         applyPdf: MultipartBody.Part,
         iOApplicationApi: IOApplicationApi
     ): StatusResponse = apiRequest {
@@ -29,9 +33,20 @@ class IOApplicationRepository : SafeApiRequest() {
             org_id.toMultipartReq(),
             department_id.toMultipartReq(),
             application_type.toMultipartReq(),
-            applyPdf
+            from_department.toMultipartReq(),
+            role_id.toMultipartReq(),
+            applyPdf,
+
+
         )
     }
+
+    suspend fun getEmployeeDetails(sevarth_id: String, iOApplicationApi: IOApplicationApi): EmployeeDetails{
+        return apiRequest { iOApplicationApi.getEmployeeDetails(sevarth_id) }
+    }
+
+    suspend fun getDepartments(iOApplicationApi: IOApplicationApi) = apiRequest { iOApplicationApi.getDepartments() }
+
 
     suspend fun getApplication(
         application_id: String,

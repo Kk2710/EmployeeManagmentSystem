@@ -4,9 +4,15 @@
     tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single">
+
+
         <item
             android:id="@+id/nav_home"
             android:title="@string/menu_home" />
+
+        <item
+            android:id="@+id/nav_apply_training"
+            android:title="@string/menu_apply_traning" />
 
         <item
             android:id="@+id/nav_training_applications"
@@ -18,6 +24,19 @@
         <item android:id="@+id/nav_applied_applications"
             android:title="@string/menu_applied_applications"/>
 
+        <item android:id="@+id/nav_verify_user"
+            android:title="@string/menu_verify_user"/>
+        <item
+            android:id="@+id/nav_all_employees"
+            android:title="@string/menu_all_employees" />
+
+        <item android:id="@+id/nav_user_details"
+            android:title="@string/menu_user_details"/>
+
+        <item
+            android:id="@+id/nav_apply_application"
+            android:title="@string/menu_apply_application" />
+
         <item
             android:id="@+id/nav_cas_applications"
             android:title="@string/cas_admin_title" />
@@ -25,5 +44,7 @@
         <item
             android:id="@+id/nav_logout"
             android:title="@string/menu_logout" />
+
+
     </group>
 </menu>
